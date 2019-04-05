@@ -1,0 +1,10 @@
+---
+# tasks file for nodejs
+- name: install node and npm
+  yum:
+   name: "{{ item }}"
+   enablerepo: epel
+   state: install
+  with_items:
+   - nodejs
+   - npm
