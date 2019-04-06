@@ -1,0 +1,5 @@
+---
+# tasks file for codedeploy
+- name: Installs aws cd agent
+  aws_codedeploy:
+        enabled: 1
